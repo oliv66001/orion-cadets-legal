@@ -45,7 +45,7 @@ LANGS = {
 humaines contre la Nuée, à travers 50 niveaux, des missions variées et des boss géants qui se transforment.</p>
 <p>Éditeur : {PUBLISHER}, France.</p>
 <p>Le jeu enregistre la progression, les cristaux, les vaisseaux débloqués et les réglages <strong>sur l’appareil</strong>.
-Il n’a pas de compte propre à l’éditeur. Il peut afficher des publicités Google AdMob et proposer des achats intégrés
+Le compte joueur est le compte Google Play Jeux (sauvegarde cloud, réussites, classements). Il peut afficher des publicités Google AdMob et proposer des achats intégrés
 via Google Play. S’il est connecté à Google Play Jeux, la progression, les réussites et les scores peuvent être
 enregistrés chez Google (voir la politique de confidentialité).</p>
 """,
@@ -125,13 +125,22 @@ Google Play.</p>
 <p>Cette page explique comment supprimer les données de <strong>{GAME}</strong>, édité par
 <strong>{PUBLISHER}</strong>.</p>
 
-<h2>Compte joueur</h2>
-<p>{GAME} <strong>ne crée aucun compte chez l’éditeur</strong> : il n’y a ni identifiant, ni mot de passe, ni profil
-stocké sur un serveur de l’éditeur. Il n’y a donc pas de compte à supprimer côté éditeur.</p>
-<p>Si vous utilisez <strong>Google Play Jeux</strong>, votre sauvegarde, vos réussites et vos scores sont rattachés à
-votre profil Play Jeux, géré par Google. Pour les supprimer : application <strong>Google Play Jeux</strong> →
-<strong>Paramètres</strong> → supprimer le compte et les données Play Jeux, ou depuis
-<a href="https://myaccount.google.com/data-and-privacy">les paramètres de votre compte Google</a>.</p>
+<h2>Compte joueur (Google Play Jeux)</h2>
+<p>Dans {GAME}, votre compte joueur est votre compte <strong>Google Play Jeux</strong> : il sert à sauvegarder votre
+progression dans le cloud (histoire, cristaux, vaisseaux), à la retrouver sur un autre téléphone, et à afficher vos
+réussites et classements. L’éditeur ne crée pas d’identifiant ni de mot de passe et n’a pas de serveur de comptes : ces
+données sont gérées par Google.</p>
+<p><strong>Supprimer le compte et ses données :</strong></p>
+<ul>
+<li><strong>Dans le jeu :</strong> écran d’accueil → <strong>Options</strong> → <strong>Effacer mes données</strong> →
+confirmez. Cela efface la sauvegarde du téléphone <strong>et</strong> la sauvegarde cloud du jeu associée à votre
+compte Play Jeux, puis vous déconnecte.</li>
+<li><strong>Chez Google :</strong> application <strong>Google Play Jeux</strong> → <strong>Paramètres</strong> →
+<strong>Supprimer le compte et les données Play Jeux</strong> (ou seulement les données de {GAME}), ou depuis
+<a href="https://myaccount.google.com/data-and-privacy">les paramètres de votre compte Google</a>.</li>
+<li><strong>Par e-mail :</strong> si vous ne pouvez plus ouvrir le jeu, utilisez le bouton ci-dessous ; nous vous
+indiquerons la marche à suivre et supprimerons toute donnée que nous détiendrions.</li>
+</ul>
 
 <h2>Supprimer les données de jeu</h2>
 <p>La progression, les cristaux, les vaisseaux débloqués et les réglages sont enregistrés sur l’appareil. Pour les effacer :</p>
@@ -155,9 +164,6 @@ votre compte Google et peuvent être restaurés.</p>
 garder, et seulement pendant la durée nécessaire.</li>
 </ul>
 
-<h2>Si un compte est ajouté plus tard</h2>
-<p>Si une future version ajoute un compte joueur, le jeu proposera la suppression du compte directement dans
-l’application, et cette page décrira la procédure, les données supprimées, les délais et les éventuelles conservations.</p>
 <p>Plus d’informations : <a href="privacy.html">politique de confidentialité</a>.</p>
 """,
         "contact": lambda: f"""
@@ -185,8 +191,8 @@ l’application, et cette page décrira la procédure, les données supprimées,
 <p>{GAME} is a space shooter: you play a student pilot of the Orion Academy defending the human colonies against the
 Swarm, across 50 levels, varied missions and giant transforming bosses.</p>
 <p>Publisher: {PUBLISHER}, France.</p>
-<p>The game stores progress, crystals, unlocked ships and settings <strong>on the device</strong>. It has no account
-with the publisher. It may show Google AdMob ads and offer in-app purchases through Google Play. If connected to Google
+<p>The game stores progress, crystals, unlocked ships and settings <strong>on the device</strong>. The player account is the Google Play Games account (cloud save,
+achievements, leaderboards). It may show Google AdMob ads and offer in-app purchases through Google Play. If connected to Google
 Play Games, progress, achievements and scores may be saved by Google (see the privacy policy).</p>
 """,
         "privacy": lambda: f"""
@@ -256,13 +262,21 @@ be updated and, for significant changes, it will be announced in the game or on 
         "delete-account": lambda: f"""
 <p>This page explains how to delete the data of <strong>{GAME}</strong>, published by <strong>{PUBLISHER}</strong>.</p>
 
-<h2>Player account</h2>
-<p>{GAME} <strong>does not create any account with the publisher</strong>: there is no username, password or profile
-stored on the publisher’s servers. There is therefore no account to delete on the publisher’s side.</p>
-<p>If you use <strong>Google Play Games</strong>, your cloud save, achievements and scores are linked to your Play Games
-profile, managed by Google. To delete them: <strong>Google Play Games</strong> app → <strong>Settings</strong> → delete
-your Play Games account and data, or from <a href="https://myaccount.google.com/data-and-privacy">your Google Account
-settings</a>.</p>
+<h2>Player account (Google Play Games)</h2>
+<p>In {GAME}, your player account is your <strong>Google Play Games</strong> account: it saves your progress in the cloud
+(story, crystals, ships), restores it on another phone, and shows your achievements and leaderboards. The publisher
+creates no username or password and runs no account server: this data is managed by Google.</p>
+<p><strong>Delete the account and its data:</strong></p>
+<ul>
+<li><strong>In the game:</strong> home screen → <strong>Options</strong> → <strong>Erase my data</strong> → confirm. This
+erases the save on the phone <strong>and</strong> the game’s cloud save linked to your Play Games account, then signs you
+out.</li>
+<li><strong>At Google:</strong> <strong>Google Play Games</strong> app → <strong>Settings</strong> → <strong>Delete Play
+Games account and data</strong> (or only the data of {GAME}), or from
+<a href="https://myaccount.google.com/data-and-privacy">your Google Account settings</a>.</li>
+<li><strong>By email:</strong> if you can no longer open the game, use the button below; we will guide you and delete any
+data we may hold.</li>
+</ul>
 
 <h2>Delete game data</h2>
 <p>Progress, crystals, unlocked ships and settings are stored on the device. To erase them:</p>
@@ -284,9 +298,6 @@ settings</a>.</p>
 as necessary.</li>
 </ul>
 
-<h2>If an account is added later</h2>
-<p>If a future version adds a player account, the game will offer account deletion directly in the app, and this page
-will describe the procedure, the data deleted, the timeframes and any retention.</p>
 <p>More information: <a href="privacy.html">privacy policy</a>.</p>
 """,
         "contact": lambda: f"""
@@ -316,7 +327,7 @@ will describe the procedure, the data deleted, the timeframes and any retention.
 colonias humanas contra el Enjambre, a lo largo de 50 niveles, misiones variadas y jefes gigantes que se transforman.</p>
 <p>Editor: {PUBLISHER}, Francia.</p>
 <p>El juego guarda el progreso, los cristales, las naves desbloqueadas y los ajustes <strong>en el dispositivo</strong>.
-No tiene cuenta propia del editor. Puede mostrar anuncios de Google AdMob y ofrecer compras integradas a través de Google
+La cuenta de jugador es la de Google Play Juegos (guardado en la nube, logros, clasificaciones). Puede mostrar anuncios de Google AdMob y ofrecer compras integradas a través de Google
 Play. Si está conectado a Google Play Juegos, el progreso, los logros y las puntuaciones pueden guardarse en Google
 (ver la política de privacidad).</p>
 """,
@@ -390,13 +401,21 @@ superior se actualizará y, si el cambio es importante, se anunciará en el jueg
         "delete-account": lambda: f"""
 <p>Esta página explica cómo eliminar los datos de <strong>{GAME}</strong>, publicado por <strong>{PUBLISHER}</strong>.</p>
 
-<h2>Cuenta de jugador</h2>
-<p>{GAME} <strong>no crea ninguna cuenta con el editor</strong>: no hay usuario, contraseña ni perfil almacenado en los
-servidores del editor. Por lo tanto, no hay ninguna cuenta que eliminar por parte del editor.</p>
-<p>Si usas <strong>Google Play Juegos</strong>, tu guardado en la nube, tus logros y tus puntuaciones están vinculados a
-tu perfil de Play Juegos, gestionado por Google. Para eliminarlos: aplicación <strong>Google Play Juegos</strong> →
-<strong>Ajustes</strong> → eliminar la cuenta y los datos de Play Juegos, o desde
-<a href="https://myaccount.google.com/data-and-privacy">la configuración de tu cuenta de Google</a>.</p>
+<h2>Cuenta de jugador (Google Play Juegos)</h2>
+<p>En {GAME}, tu cuenta de jugador es tu cuenta de <strong>Google Play Juegos</strong>: guarda tu progreso en la nube
+(historia, cristales, naves), lo recupera en otro teléfono y muestra tus logros y clasificaciones. El editor no crea
+usuario ni contraseña y no tiene servidor de cuentas: estos datos los gestiona Google.</p>
+<p><strong>Eliminar la cuenta y sus datos:</strong></p>
+<ul>
+<li><strong>En el juego:</strong> pantalla de inicio → <strong>Opciones</strong> → <strong>Borrar mis datos</strong> →
+confirma. Esto borra el guardado del teléfono <strong>y</strong> el guardado en la nube del juego vinculado a tu cuenta
+de Play Juegos, y cierra la sesión.</li>
+<li><strong>En Google:</strong> aplicación <strong>Google Play Juegos</strong> → <strong>Ajustes</strong> →
+<strong>Eliminar la cuenta y los datos de Play Juegos</strong> (o solo los datos de {GAME}), o desde
+<a href="https://myaccount.google.com/data-and-privacy">la configuración de tu cuenta de Google</a>.</li>
+<li><strong>Por correo:</strong> si ya no puedes abrir el juego, usa el botón de abajo; te indicaremos los pasos y
+eliminaremos cualquier dato que tengamos.</li>
+</ul>
 
 <h2>Eliminar los datos del juego</h2>
 <p>El progreso, los cristales, las naves desbloqueadas y los ajustes se guardan en el dispositivo. Para borrarlos:</p>
@@ -420,9 +439,6 @@ siguen vinculadas a tu cuenta de Google y pueden restaurarse.</p>
 únicamente durante el tiempo necesario.</li>
 </ul>
 
-<h2>Si más adelante se añade una cuenta</h2>
-<p>Si una versión futura añade una cuenta de jugador, el juego permitirá eliminarla directamente en la aplicación, y esta
-página describirá el procedimiento, los datos eliminados, los plazos y las posibles conservaciones.</p>
 <p>Más información: <a href="privacy.html">política de privacidad</a>.</p>
 """,
         "contact": lambda: f"""
@@ -450,8 +466,8 @@ página describirá el procedimiento, los datos eliminados, los plazos y las pos
 <p>{GAME} é um jogo de tiro espacial: você é um piloto em formação da Academia de Órion que defende as colônias humanas
 contra o Enxame, ao longo de 50 níveis, missões variadas e chefões gigantes que se transformam.</p>
 <p>Editor: {PUBLISHER}, França.</p>
-<p>O jogo salva o progresso, os cristais, as naves desbloqueadas e as configurações <strong>no dispositivo</strong>. Ele
-não tem conta própria do editor. Pode exibir anúncios do Google AdMob e oferecer compras no app pelo Google Play. Se
+<p>O jogo salva o progresso, os cristais, as naves desbloqueadas e as configurações <strong>no dispositivo</strong>. A
+conta de jogador é a do Google Play Games (salvamento na nuvem, conquistas, placares). Pode exibir anúncios do Google AdMob e oferecer compras no app pelo Google Play. Se
 estiver conectado ao Google Play Games, o progresso, as conquistas e as pontuações podem ser salvos pelo Google (veja a
 política de privacidade).</p>
 """,
@@ -524,13 +540,21 @@ página será atualizada e, se a mudança for importante, ela será anunciada no
         "delete-account": lambda: f"""
 <p>Esta página explica como excluir os dados de <strong>{GAME}</strong>, publicado por <strong>{PUBLISHER}</strong>.</p>
 
-<h2>Conta de jogador</h2>
-<p>{GAME} <strong>não cria nenhuma conta com o editor</strong>: não há usuário, senha nem perfil armazenado nos servidores
-do editor. Portanto, não há conta a excluir por parte do editor.</p>
-<p>Se você usa o <strong>Google Play Games</strong>, seu salvamento na nuvem, suas conquistas e pontuações estão ligados
-ao seu perfil do Play Games, gerenciado pelo Google. Para excluí-los: app <strong>Google Play Games</strong> →
-<strong>Configurações</strong> → excluir a conta e os dados do Play Games, ou nas
-<a href="https://myaccount.google.com/data-and-privacy">configurações da sua Conta do Google</a>.</p>
+<h2>Conta de jogador (Google Play Games)</h2>
+<p>Em {GAME}, sua conta de jogador é sua conta do <strong>Google Play Games</strong>: ela salva seu progresso na nuvem
+(história, cristais, naves), recupera-o em outro telefone e mostra suas conquistas e placares. O editor não cria usuário
+nem senha e não tem servidor de contas: esses dados são gerenciados pelo Google.</p>
+<p><strong>Excluir a conta e seus dados:</strong></p>
+<ul>
+<li><strong>No jogo:</strong> tela inicial → <strong>Opções</strong> → <strong>Apagar meus dados</strong> → confirme.
+Isso apaga o salvamento do telefone <strong>e</strong> o salvamento na nuvem do jogo ligado à sua conta do Play Games, e
+encerra a sessão.</li>
+<li><strong>No Google:</strong> app <strong>Google Play Games</strong> → <strong>Configurações</strong> → <strong>Excluir
+conta e dados do Play Games</strong> (ou só os dados de {GAME}), ou nas
+<a href="https://myaccount.google.com/data-and-privacy">configurações da sua Conta do Google</a>.</li>
+<li><strong>Por e-mail:</strong> se você não consegue mais abrir o jogo, use o botão abaixo; vamos orientar você e excluir
+qualquer dado que tivermos.</li>
+</ul>
 
 <h2>Excluir os dados do jogo</h2>
 <p>O progresso, os cristais, as naves desbloqueadas e as configurações ficam salvos no dispositivo. Para apagá-los:</p>
@@ -553,9 +577,6 @@ podem ser restauradas.</p>
 pelo tempo necessário.</li>
 </ul>
 
-<h2>Se uma conta for adicionada depois</h2>
-<p>Se uma versão futura adicionar uma conta de jogador, o jogo permitirá excluí-la diretamente no app, e esta página
-descreverá o procedimento, os dados excluídos, os prazos e as eventuais conservações.</p>
 <p>Mais informações: <a href="privacy.html">política de privacidade</a>.</p>
 """,
         "contact": lambda: f"""
