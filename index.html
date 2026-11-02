@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orion Cadets</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function () {
+  var supported = ['fr', 'en', 'es', 'pt'];
+  var prefs = navigator.languages || [navigator.language || "en"];
+  var lang = "en";
+  for (var i = 0; i < prefs.length; i++) {
+    var c = String(prefs[i]).slice(0, 2).toLowerCase();
+    if (supported.indexOf(c) >= 0) { lang = c; break; }
+  }
+  location.replace(lang + "/index.html");
+})();
+</script>
+</head>
+<body>
+<header class="hero">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="64" height="64"><span>Orion Cadets</span></a>
+  <h1>Choose your language</h1>
+</header>
+<main><ul class="cards"><li><a href="fr/index.html" hreflang="fr" lang="fr">Français — Informations légales et assistance</a></li><li><a href="en/index.html" hreflang="en" lang="en">English — Legal information and support</a></li><li><a href="es/index.html" hreflang="es" lang="es">Español — Información legal y asistencia</a></li><li><a href="pt/index.html" hreflang="pt" lang="pt">Português — Informações legais e suporte</a></li></ul></main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orion Cadets</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+(function () {
+  var supported = ['fr', 'en', 'es', 'pt'];
+  var prefs = navigator.languages || [navigator.language || "en"];
+  var lang = "en";
+  for (var i = 0; i < prefs.length; i++) {
+    var c = String(prefs[i]).slice(0, 2).toLowerCase();
+    if (supported.indexOf(c) >= 0) { lang = c; break; }
+  }
+  location.replace(lang + "/contact.html");
+})();
+</script>
+</head>
+<body>
+<header class="hero">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="64" height="64"><span>Orion Cadets</span></a>
+  <h1>Choose your language</h1>
+</header>
+<main><ul class="cards"><li><a href="fr/contact.html" hreflang="fr" lang="fr">Français — Contact et informations sur l’éditeur</a></li><li><a href="en/contact.html" hreflang="en" lang="en">English — Contact and publisher information</a></li><li><a href="es/contact.html" hreflang="es" lang="es">Español — Contacto e información del editor</a></li><li><a href="pt/contact.html" hreflang="pt" lang="pt">Português — Contato e informações do editor</a></li></ul></main>
+</body>
+</html>
